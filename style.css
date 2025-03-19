@@ -39,6 +39,68 @@ p {
     background-color: #218838;
 }
 
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-top: 30px;
+}
+
+.features-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.features-list li {
+    margin: 10px 0;
+}
+
+.testimonials {
+    margin-top: 20px;
+}
+
+.testimonial {
+    background-color: #eee;
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 600px;
+    font-style: italic;
+}
+
+.contact-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 80%;
+    max-width: 600px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
 .taskbar {
     display: flex;
     justify-content: space-between;
@@ -88,3 +150,10 @@ button:hover {
     font-size: 20px;
 }
 
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 30px;
+}
