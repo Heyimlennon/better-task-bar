@@ -5,41 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Better Task Bar</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="content">
-        <h1>Better Task Bar</h1>
-        <p>If you find your taskbar becoming cluttered with too many apps, try using the Better Task Bar. It helps streamline your workspace, keeping only the essentials visible and organized. Enjoy a more efficient and clean taskbar experience.</p>
-
-        <div class="download-section">
+    <div class="container">
+        <header>
+            <h1>Better Task Bar</h1>
+            <p>Simplify your workspace with an organized taskbar.</p>
+        </header>
+        
+        <section class="download-section">
             <a href="https://www.mediafire.com/file/kz7ube4ovi5ctsm/better+task+bar.zip/file" class="download-btn" target="_blank">Download Task Bar</a>
-        </div>
+        </section>
 
-        <h2>Features</h2>
-        <ul class="features-list">
-            <li>Reduce clutter on your taskbar</li>
-            <li>Keep essential apps visible</li>
-            <li>Organize your workspace for efficiency</li>
-            <li>Customizable taskbar appearance</li>
-        </ul>
+        <section class="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Reduce clutter on your taskbar</li>
+                <li>Keep essential apps visible</li>
+                <li>Customizable appearance</li>
+                <li>Boost productivity</li>
+                <li>Dark mode support</li>
+                <li>Drag and drop app organization</li>
+            </ul>
+        </section>
 
-        <h2>User Testimonials</h2>
-        <div class="testimonials">
+        <section class="testimonials">
+            <h2>User Testimonials</h2>
             <div class="testimonial">
                 <p>"The Better Task Bar is a game changer! My taskbar is now neat and organized, making it easier to switch between apps." - Alex</p>
             </div>
             <div class="testimonial">
                 <p>"I love how easy it is to keep only the apps I need in sight. It's perfect for productivity!" - Jordan</p>
             </div>
-        </div>
+            <div class="testimonial">
+                <p>"I use Better Task Bar daily, and it's improved my workflow tremendously!" - Casey</p>
+            </div>
+        </section>
 
-        <h2>Contact Us</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>How do I install Better Task Bar?</summary>
+                <p>Download the ZIP file, extract it, and follow the installation guide inside.</p>
+            </details>
+            <details>
+                <summary>Is it free to use?</summary>
+                <p>Yes! Better Task Bar is completely free and open-source.</p>
+            </details>
+            <details>
+                <summary>Can I customize the taskbar?</summary>
+                <p>Yes, you can change the appearance and layout to suit your needs.</p>
+            </details>
+        </section>
+
+        <section class="comments">
+            <h2>User Comments</h2>
+            <form id="comment-form">
+                <input type="text" id="comment-name" placeholder="Your Name" required>
+                <textarea id="comment-text" placeholder="Write a comment..." required></textarea>
+                <button type="submit">Post Comment</button>
+            </form>
+            <div id="comments-section">
+                <!-- Comments will appear here -->
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
     </div>
 
     <div class="taskbar">
