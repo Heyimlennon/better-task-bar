@@ -1,159 +1,104 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Task Bar</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Better Task Bar</h1>
+            <p>Simplify your workspace with an organized taskbar.</p>
+        </header>
+        
+        <section class="download-section">
+            <a href="https://www.mediafire.com/file/kz7ube4ovi5ctsm/better+task+bar.zip/file" class="download-btn" target="_blank">Download Task Bar</a>
+        </section>
 
-.content {
-    text-align: center;
-    padding: 20px;
-}
+        <section class="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Reduce clutter on your taskbar</li>
+                <li>Keep essential apps visible</li>
+                <li>Customizable appearance</li>
+                <li>Boost productivity</li>
+                <li>Dark mode support</li>
+                <li>Drag and drop app organization</li>
+            </ul>
+        </section>
 
-h1 {
-    font-size: 36px;
-    color: #333;
-}
+        <section class="testimonials">
+            <h2>User Testimonials</h2>
+            <div class="testimonial">
+                <p>"The Better Task Bar is a game changer! My taskbar is now neat and organized, making it easier to switch between apps." - Alex</p>
+            </div>
+            <div class="testimonial">
+                <p>"I love how easy it is to keep only the apps I need in sight. It's perfect for productivity!" - Jordan</p>
+            </div>
+            <div class="testimonial">
+                <p>"I use Better Task Bar daily, and it's improved my workflow tremendously!" - Casey</p>
+            </div>
+        </section>
 
-p {
-    font-size: 18px;
-    color: #666;
-}
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>How do I install Better Task Bar?</summary>
+                <p>Download the ZIP file, extract it, and follow the installation guide inside.</p>
+            </details>
+            <details>
+                <summary>Is it free to use?</summary>
+                <p>Yes! Better Task Bar is completely free and open-source.</p>
+            </details>
+            <details>
+                <summary>Can I customize the taskbar?</summary>
+                <p>Yes, you can change the appearance and layout to suit your needs.</p>
+            </details>
+        </section>
 
-.download-section {
-    margin-top: 20px;
-}
+        <section class="comments">
+            <h2>User Comments</h2>
+            <form id="comment-form">
+                <input type="text" id="comment-name" placeholder="Your Name" required>
+                <textarea id="comment-text" placeholder="Write a comment..." required></textarea>
+                <button type="submit">Post Comment</button>
+            </form>
+            <div id="comments-section">
+                <!-- Comments will appear here -->
+            </div>
+        </section>
 
-.download-btn {
-    display: inline-block;
-    background-color: #28a745;
-    color: white;
-    padding: 15px 25px;
-    font-size: 18px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
 
-.download-btn:hover {
-    background-color: #218838;
-}
+    <div class="taskbar">
+        <div class="left">
+            <button class="start-btn">Start</button>
+        </div>
+        <div class="center">
+            <input type="search" class="search-bar" placeholder="Search...">
+        </div>
+        <div class="right">
+            <button class="settings-btn">⚙️</button>
+            <button class="notification-btn">🔔</button>
+        </div>
+    </div>
 
-h2 {
-    font-size: 28px;
-    color: #333;
-    margin-top: 30px;
-}
-
-.features-list {
-    list-style-type: none;
-    padding: 0;
-    font-size: 18px;
-    color: #555;
-    margin-top: 10px;
-}
-
-.features-list li {
-    margin: 10px 0;
-}
-
-.testimonials {
-    margin-top: 20px;
-}
-
-.testimonial {
-    background-color: #eee;
-    padding: 15px;
-    margin: 10px auto;
-    border-radius: 5px;
-    width: 80%;
-    max-width: 600px;
-    font-style: italic;
-}
-
-.contact-form {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 80%;
-    max-width: 600px;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-.contact-form button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: #0056b3;
-}
-
-.taskbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-.taskbar .left,
-.taskbar .center,
-.taskbar .right {
-    display: flex;
-    align-items: center;
-}
-
-button {
-    background-color: #444;
-    color: white;
-    border: none;
-    padding: 10px;
-    margin: 0 10px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #555;
-}
-
-.search-bar {
-    padding: 10px;
-    margin: 0 10px;
-    border-radius: 5px;
-    border: none;
-    width: 300px;
-}
-
-.start-btn {
-    background-color: #2c3e50;
-}
-
-.settings-btn, .notification-btn {
-    font-size: 20px;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    margin-top: 30px;
-}
+    <footer>
+        <p>&copy; 2025 Better Task Bar. All rights reserved.</p>
+    </footer>
+</body>
+</html>
